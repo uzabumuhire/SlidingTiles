@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlidingTiles", "SlidingTiles\SlidingTiles.csproj", "{277453B5-3563-4029-A0B8-1EE676400594}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277453B5-3563-4029-A0B8-1EE676400594}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{277453B5-3563-4029-A0B8-1EE676400594}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{277453B5-3563-4029-A0B8-1EE676400594}.Release|iPhone.ActiveCfg = Release|iPhone
+		{277453B5-3563-4029-A0B8-1EE676400594}.Release|iPhone.Build.0 = Release|iPhone
+		{277453B5-3563-4029-A0B8-1EE676400594}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{277453B5-3563-4029-A0B8-1EE676400594}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{277453B5-3563-4029-A0B8-1EE676400594}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{277453B5-3563-4029-A0B8-1EE676400594}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
