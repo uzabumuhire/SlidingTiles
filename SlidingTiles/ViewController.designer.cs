@@ -21,6 +21,14 @@ namespace SlidingTiles
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel gameTitle { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton resetGameButton { get; set; }
+
+        [Action ("ResetGame_Clicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void ResetGame_Clicked (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (gameBoardView != null) {
@@ -31,6 +39,11 @@ namespace SlidingTiles
             if (gameTitle != null) {
                 gameTitle.Dispose ();
                 gameTitle = null;
+            }
+
+            if (resetGameButton != null) {
+                resetGameButton.Dispose ();
+                resetGameButton = null;
             }
         }
     }
