@@ -25,9 +25,17 @@ namespace SlidingTiles
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton resetGameButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton shuffleButton { get; set; }
+
         [Action ("ResetGame_Clicked:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void ResetGame_Clicked (UIKit.UIButton sender);
+
+        [Action ("ShuffleTiles_Clicked:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void ShuffleTiles_Clicked (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
@@ -44,6 +52,11 @@ namespace SlidingTiles
             if (resetGameButton != null) {
                 resetGameButton.Dispose ();
                 resetGameButton = null;
+            }
+
+            if (shuffleButton != null) {
+                shuffleButton.Dispose ();
+                shuffleButton = null;
             }
         }
     }

@@ -46,12 +46,25 @@
                                     <action selector="ResetGame_Clicked:" destination="BYZ-38-t0r" id="203" eventType="touchUpInside"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="207" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="541" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.16078431372549021" blue="0" alpha="1"/>
+                                <state key="normal" title="Shuffle Tiles">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShuffleTiles_Clicked:" destination="BYZ-38-t0r" id="208" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="gameTitle" destination="197" id="name-outlet-197"/>
                         <outlet property="gameBoardView" destination="199" id="name-outlet-199"/>
                         <outlet property="resetGameButton" destination="202" id="name-outlet-202"/>
+                        <outlet property="shuffleButton" destination="207" id="name-outlet-207"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
