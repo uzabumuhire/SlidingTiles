@@ -26,10 +26,16 @@
                                 <nil key="highlightedColor"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.74117647058823533" blue="0" alpha="1"/>
                             </label>
+                            <view contentMode="scaleToFill" id="199" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="102" width="374" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                            </view>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="gameTitle" destination="197" id="name-outlet-197"/>
+                        <outlet property="gameBoardView" destination="199" id="name-outlet-199"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

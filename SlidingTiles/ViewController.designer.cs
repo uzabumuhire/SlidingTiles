@@ -15,10 +15,19 @@ namespace SlidingTiles
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView gameBoardView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel gameTitle { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (gameBoardView != null) {
+                gameBoardView.Dispose ();
+                gameBoardView = null;
+            }
+
             if (gameTitle != null) {
                 gameTitle.Dispose ();
                 gameTitle = null;
