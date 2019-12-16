@@ -90,6 +90,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -107,6 +108,7 @@
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IGameTile.cs" />
+    <Compile Include="Classes\GameTile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
