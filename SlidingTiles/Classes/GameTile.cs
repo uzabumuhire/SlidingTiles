@@ -50,7 +50,7 @@ namespace SlidingTiles.Classes
                     (nint)fWidth,
                     (nint)fHeight,
                     8,
-                    4* (nint)fWidth,
+                    4 * (nint)fWidth,
                     colorSpace,
                     CGImageAlphaInfo.PremultipliedFirst))
             {
