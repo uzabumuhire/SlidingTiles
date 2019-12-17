@@ -7,6 +7,9 @@ using SlidingTiles.Interfaces;
 
 namespace SlidingTiles.Classes
 {
+    /// <summary>
+    /// A tile image.
+    /// </summary>
     public class GameTile: UIImageView, IGameTile
     {
         public GameTile()
