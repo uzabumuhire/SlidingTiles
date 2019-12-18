@@ -122,6 +122,38 @@ namespace SlidingTiles
             gameTileImagesArray.RemoveAt(gameTileImagesArray.Count - 1);
         }
 
+        /// <summary>
+        /// Reset the current game in progress.
+        /// </summary>
+        /// <param name="sender">The reset game button</param>
+        partial void ResetGame_Clicked(UIButton sender)
+        {
+            // Set up the UIAlertController as well as the Action methods
+            UIApplication.SharedApplication.InvokeOnMainThread(
+                new Action(() =>
+                {
+                    var alert = UIAlertController.Create(
+                        "Reset Game",
+                        "Are you sure you want to start again ?",
+                        UIAlertControllerStyle.Alert);
+
+                    // Set up the button event handlers
+
+                    alert.AddAction(UIAlertAction.Create(
+                        "OK",
+                        UIAlertActionStyle.Default,
+                        a => { StartNewGame(); }));
+
+                    alert.AddAction(UIAlertAction.Create(
+                        "Cancel",
+                        UIAlertActionStyle.Default,
+                        null));
+
+                    // Display the UIAlertController to the current view
+                    this.ShowViewController(alert, sender);
+                }));
+        }
+
         private void StartNewGame()
         {
             throw new NotImplementedException();
