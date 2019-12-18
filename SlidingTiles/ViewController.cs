@@ -168,6 +168,8 @@ namespace SlidingTiles
                 any.Center = (CGPoint)tempGameTileCoords[randomIndex];
                 tempGameTileCoords.RemoveAt(randomIndex);
             }
+            emptyTilePos = (CGPoint)tempGameTileCoords[0];
+            tempGameTileCoords.Clear();
         }
 
         private void StartNewGame()
