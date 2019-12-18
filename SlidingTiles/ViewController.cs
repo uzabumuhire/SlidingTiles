@@ -125,7 +125,7 @@ namespace SlidingTiles
         /// <summary>
         /// Reset the current game in progress.
         /// </summary>
-        /// <param name="sender">The reset game button</param>
+        /// <param name="sender">The Reset game button</param>
         partial void ResetGame_Clicked(UIButton sender)
         {
             // Set up the UIAlertController as well as the Action methods
@@ -152,6 +152,22 @@ namespace SlidingTiles
                     // Display the UIAlertController to the current view
                     this.ShowViewController(alert, sender);
                 }));
+        }
+
+        /// <summary>
+        /// Randomly shuffles the game tiles on the game board.
+        /// </summary>
+        /// <param name="sender">The Shuffle game button</param>
+        partial void ShuffleTiles_Clicked(UIButton sender)
+        {
+            var tempGameTileCoords = new List<CGPoint>(gameTileCoords);
+            foreach (UIImageView any in gameTileImagesArray)
+            {
+                var randGen = new Random();
+                int randomIndex = randGen.Next(0, tempGameTileCoords.Count);
+                any.Center = (CGPoint)tempGameTileCoords[randomIndex];
+                tempGameTileCoords.RemoveAt(randomIndex);
+            }
         }
 
         private void StartNewGame()
